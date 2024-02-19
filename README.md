@@ -1,7 +1,6 @@
 # Bài tập KTPM Tuần 1
 
 > **INT3105_1**
-> 
 
 Trần Duy Khánh
 
@@ -18,26 +17,27 @@ Video demo: [https://www.youtube.com/watch?v=9itSrdOfvGk](https://www.youtube.co
 ### Docker
 
 <aside>
-💡 Docker là một nền tảng mã nguồn mở giúp **đóng gói, triển khai và vận hành** ứng dụng một cách dễ dàng hơn. Docker sử dụng **container**, một dạng ảo hóa nhẹ, để cô lập ứng dụng và môi trường của nó khỏi hệ thống máy chủ.
+💡 Docker là một nền tảng mã nguồn mở giúp đóng gói, triển khai và vận hành ứng dụng một cách dễ dàng hơn. Docker sử dụng container, một dạng ảo hóa nhẹ, để cô lập ứng dụng và môi trường của nó khỏi hệ thống máy chủ.
 
 </aside>
 
 - **Lợi ích:**
-    - **Tính nhất quán:** Đảm bảo ứng dụng chạy giống nhau trên mọi môi trường (phát triển, thử nghiệm, sản xuất)
-    - **Khả chuyển:** Dễ dàng di chuyển ứng dụng giữa các máy chủ mà không cần cấu hình lại
-    - **Hiệu quả:** Tiết kiệm tài nguyên hệ thống bằng cách chia sẻ các thư viện và tập tin chung
-    - **Tăng tốc độ phát triển:** Tự động hóa các quy trình triển khai và vận hành
-    - **Mở rộng:** Dễ dàng mở rộng quy mô ứng dụng bằng cách thêm các container mới
+  - **Tính nhất quán:** Đảm bảo ứng dụng chạy giống nhau trên mọi môi trường (phát triển, thử nghiệm, sản xuất)
+  - **Khả chuyển:** Dễ dàng di chuyển ứng dụng giữa các máy chủ mà không cần cấu hình lại
+  - **Hiệu quả:** Tiết kiệm tài nguyên hệ thống bằng cách chia sẻ các thư viện và tập tin chung
+  - **Tăng tốc độ phát triển:** Tự động hóa các quy trình triển khai và vận hành
+  - **Mở rộng:** Dễ dàng mở rộng quy mô ứng dụng bằng cách thêm các container mới
 
 ## docker-compose
 
 <aside>
-💡 **Docker Compose** là một công cụ hỗ trợ xác định và chạy các ứng dụng multi-container . Docker Compose có thể xử lý đồng thời multi-container trong sản xuất, staging, phát triển, thử nghiệm và CI.
+💡 Docker Compose là một công cụ hỗ trợ xác định và chạy các ứng dụng multi-container. Docker Compose có thể xử lý đồng thời multi-container trong sản xuất, staging, phát triển, thử nghiệm và CI.
 
 </aside>
 
 <aside>
-💡 Docker Compose hoạt động bằng cách áp dụng các quy tắc được xác định trong tệp d**ocker-compose.yaml.**
+💡 Docker Compose hoạt động bằng cách áp dụng các quy tắc được xác định trong tệp docker-compose.yaml.
+
 
 </aside>
 
@@ -70,15 +70,16 @@ Video demo: [https://www.youtube.com/watch?v=9itSrdOfvGk](https://www.youtube.co
 <aside>
 💡 Alpine Linux và Ubuntu là hai bản phân phối Linux phổ biến với những đặc điểm và mục đích sử dụng khác nhau. Hãy khám phá những khác biệt chính giữa hai bản phân phối này:
 
+
 </aside>
 
-| Đặc điểm\ Tên | Alpine Linux  | Ubuntu |
-| --- | --- | --- |
-| Kích thước và dung lượng | Alpine Linux nổi tiếng với kích thước nhỏ và hướng tiếp cận tối giản. Nó được thiết kế để nhẹ nhàng và tối ưu hóa cho môi trường có tài nguyên hạn chế. Hình ảnh Alpine Linux cơ bản nhỏ hơn đáng kể so với Ubuntu, làm cho nó lý tưởng cho môi trường dựa trên container nơi việc tận dụng tài nguyên hiệu quả là quan trọng. | Ubuntu là một bản phân phối phong phú hơn với dung lượng lớn, cung cấp một loạt gói và công cụ sẵn có. |
-| Quản lý gói | Alpine Linux sử dụng trình quản lý gói riêng của nó được gọi là apk. Alpine Package Keeper (APK) được tối ưu hóa cho thiết kế tối giản của Alpine, sử dụng musl libc thay vì glibc để giảm kích thước gói và tăng tốc độ cài đặt. | Ubuntu sử dụng Advanced Package Tool (APT) làm hệ thống quản lý gói, cung cấp một kho lưu trữ lớn của các gói được biên dịch trước. Những gói này có thể được cài đặt và quản lý dễ dàng bằng các lệnh apt-get hoặc aptitude. |
+| Đặc điểm\ Tên               | Alpine Linux                                                 | Ubuntu                                                       |
+| --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Kích thước và dung lượng    | Alpine Linux nổi tiếng với kích thước nhỏ và hướng tiếp cận tối giản. Nó được thiết kế để nhẹ nhàng và tối ưu hóa cho môi trường có tài nguyên hạn chế. Hình ảnh Alpine Linux cơ bản nhỏ hơn đáng kể so với Ubuntu, làm cho nó lý tưởng cho môi trường dựa trên container nơi việc tận dụng tài nguyên hiệu quả là quan trọng. | Ubuntu là một bản phân phối phong phú hơn với dung lượng lớn, cung cấp một loạt gói và công cụ sẵn có. |
+| Quản lý gói                 | Alpine Linux sử dụng trình quản lý gói riêng của nó được gọi là apk. Alpine Package Keeper (APK) được tối ưu hóa cho thiết kế tối giản của Alpine, sử dụng musl libc thay vì glibc để giảm kích thước gói và tăng tốc độ cài đặt. | Ubuntu sử dụng Advanced Package Tool (APT) làm hệ thống quản lý gói, cung cấp một kho lưu trữ lớn của các gói được biên dịch trước. Những gói này có thể được cài đặt và quản lý dễ dàng bằng các lệnh apt-get hoặc aptitude. |
 | Bảo mật và Củng cố hệ thống | Alpine Linux tập trung mạnh vào bảo mật và cung cấp một số tính năng tích hợp để củng cố hệ thống. Nó áp dụng một hướng tiếp cận tối giản bằng cách chỉ bao gồm các gói cần thiết trong hình ảnh cơ bản, giảm bề mặt tấn công. | Ubuntu cũng chú trọng đến bảo mật và cung cấp các bản cập nhật và vá bảo mật đều đặn, nhưng có một lựa chọn gói rộng hơn, điều này có thể tạo ra bề mặt tấn công lớn hơn nếu không được quản lý một cách đúng đắn. |
-| Cộng đồng và Hỗ trợ | Alpine Linux có một cộng đồng nhỏ hơn nhưng đang phát triển, nổi tiếng với sự tập trung vào tính tối giản và hiệu quả. Ngoài ra, Alpine Linux cũng được hưởng lợi từ sự hỗ trợ của cộng đồng Docker, vì nó là một lựa chọn phổ biến cho môi trường dựa trên container. | Ubuntu có một cộng đồng lớn và tích cực, với tài liệu phong phú và hỗ trợ từ cộng đồng. Nó hưởng lợi từ một cộng đồng người dùng đáng kể, làm cho việc tìm kiếm tài nguyên và nhận được sự trợ giúp dễ dàng hơn khi cần thiết.  |
-| Các trường hợp sử dụng | Kích thước nhỏ và thiết kế tối giản của Alpine Linux làm cho nó phù hợp cho các môi trường nhẹ nhàng và có tài nguyên hạn chế.  | Ubuntu, với dung lượng lớn và lựa chọn gói rộng hơn, phù hợp cho nhiều trường hợp sử dụng khác nhau. Nó có thể được sử dụng cho việc sử dụng trên máy tính để bàn, triển khai máy chủ và môi trường phát triển yêu cầu một bộ công cụ và thư viện phong phú. |
+| Cộng đồng và Hỗ trợ         | Alpine Linux có một cộng đồng nhỏ hơn nhưng đang phát triển, nổi tiếng với sự tập trung vào tính tối giản và hiệu quả. Ngoài ra, Alpine Linux cũng được hưởng lợi từ sự hỗ trợ của cộng đồng Docker, vì nó là một lựa chọn phổ biến cho môi trường dựa trên container. | Ubuntu có một cộng đồng lớn và tích cực, với tài liệu phong phú và hỗ trợ từ cộng đồng. Nó hưởng lợi từ một cộng đồng người dùng đáng kể, làm cho việc tìm kiếm tài nguyên và nhận được sự trợ giúp dễ dàng hơn khi cần thiết. |
+| Các trường hợp sử dụng      | Kích thước nhỏ và thiết kế tối giản của Alpine Linux làm cho nó phù hợp cho các môi trường nhẹ nhàng và có tài nguyên hạn chế. | Ubuntu, với dung lượng lớn và lựa chọn gói rộng hơn, phù hợp cho nhiều trường hợp sử dụng khác nhau. Nó có thể được sử dụng cho việc sử dụng trên máy tính để bàn, triển khai máy chủ và môi trường phát triển yêu cầu một bộ công cụ và thư viện phong phú. |
 
 Tóm lại, Alpine Linux cung cấp một hướng tiếp cận nhẹ nhàng và tối giản, tối ưu hóa cho môi trường có tài nguyên hạn chế và containerization. Trong khi đó, Ubuntu cung cấp một bản phân phối phong phú và đa năng hơn, phù hợp cho nhiều trường hợp sử dụng khác nhau.
 
@@ -91,10 +92,12 @@ Tóm lại, Alpine Linux cung cấp một hướng tiếp cận nhẹ nhàng và
 <aside>
 💡 VNC Server (Virtual Network Computing Server) là một hệ thống được sử dụng để chia sẻ màn hình máy tính cho người dùng từ xa. Đây là một công nghệ giúp người dùng truy cập và điều khiển máy tính từ một nơi khác thông qua mạng.
 
+
 </aside>
 
 <aside>
 💡 VNC Server hoạt động dựa trên giao thức TCP (Transmission Control Protocol) và sử dụng các cổng bắt đầu từ 5900 trở lên. Khi được kích hoạt, VNC Server ghi nhận nội dung của framebuffer (bộ nhớ hình ảnh) trên máy tính và chia sẻ nội dung này với VNC Client (người dùng từ xa). Thông qua một kết nối mạng, VNC Client có thể hiển thị và điều khiển màn hình máy tính từ xa như làm việc trực tiếp trên máy tính đó.
+
 
 </aside>
 
@@ -150,9 +153,9 @@ Tiến hành tạo image bằng lệnh sau:
 docker build -t ubuntu_ssh .
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled.png)
+![Untitled](https://github.com/duykhanhxx03/bop-bop/assets/99308937/18de19ff-5c14-458b-8d61-7f3447297148)
 
-Lệnh trên tạo 1 image tên ubuntu_ssh tại thư mục hiện tại bash đang trỏ đến, ở đây là /home/docker-example/ubuntu-ssh
+Lệnh trên tạo 1 image tên ubuntu_ssh tại thư mục hiện tại bash đang trỏ đến, ở đây là /home/docker-example/ubuntu-ss
 
 File yaml dưới đây mô tả đang sử dụng docker-compose version 3, định nghĩa service remote_ubuntu dùng image mà ta vừa tạo là ubuntu_ssh, NAT port với host là 22.
 
@@ -176,14 +179,14 @@ Tại thư mục chứa file docker-compose.yml:
 docker compose up
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%201.png)
+![Untitled (1)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/ff449bcc-5d57-4d7b-af1e-382076dd6a87)
 
 ```bash
-docker container ls
+docker container l
 //docker container ls -a
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%202.png)
+![Untitled (2)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/5303d379-b12e-4a10-98dd-77d2b3d3e580)
 
 Tiến hành xem thông tin của container, bao gồm thông tin mạng
 
@@ -191,9 +194,9 @@ Tiến hành xem thông tin của container, bao gồm thông tin mạng
 docker container inspect 9fafc29e9a5a
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%203.png)
+![Untitled (3)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/040cd0de-e9a7-4c75-ba4f-f73c056817cd)
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%204.png)
+![Untitled (4)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/7631b2aa-67a9-4c72-b9d9-0bbc43193557)
 
 Ở đây ip của container là 172.22.0.2.
 
@@ -203,7 +206,7 @@ Tiến hành SSH sang container bằng host, thông qua tài khoản và mật k
 ssh duykhanhxx03@172.22.0.2
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%205.png)
+![Untitled (5)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/ee4ed795-dfe9-4dda-832b-734cdf5afc62)
 
 Xác nhận bằng yes và nhập mật khẩu.
 
@@ -213,7 +216,7 @@ Chuyển sang quyền root:
 su root
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%206.png)
+![Untitled (6)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/b5efa48e-97b9-47ff-be63-2a72e5c4ef08)
 
 Cập nhật repository apt và cài desktop enviroment, ở đây là xfce4.
 
@@ -227,7 +230,7 @@ Sau khi cài xong DE, tiến hành restart container và dùng host SSH lại co
 docker container restart 9fafc29e9a5a
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%207.png)
+![Untitled (7)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/b6c0626b-91d7-4b8a-bdec-2ac170851c9f)
 
 Cài đặt vncserver:
 
@@ -243,17 +246,16 @@ vncserver
 
 Cài đặt mật khẩu:
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%208.png)
+![Untitled (8)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/89719654-fdfe-4503-b1bc-f70a69e4779e)
 
-> Lưu ý: Mật khẩu sẽ có độ dài từ 6→8 kí tự, nếu mật khẩu dài hơn 8 kí tự, nó sẽ bị cắt ngắn lại
-Ví dụ: Nếu nhập mật khẩu như "startup2233", nó sẽ bị cắt thành "startup2".
-> 
+> **Lưu ý:** Mật khẩu sẽ có độ dài từ 6→8 kí tự, nếu mật khẩu dài hơn 8 kí tự, nó sẽ bị cắt ngắn lại
+> Ví dụ: Nếu nhập mật khẩu như "startup2233", nó sẽ bị cắt thành "startup2".
 
 Sau khi thiết lập mật khẩu, xuất hiện thông báo yêu cầu đặt mật khẩu view-only. Điều này có nghĩa là bất kỳ ai truy cập máy chủ VNC bằng mật khẩu view-only sẽ không thể điều khiển máy tính từ xa bằng chuột hoặc bàn phím.
 
 Đối với bài này, không cần thiết lập mật khẩu view-only. Chỉ cần gõ N và nhấn Enter.
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%209.png)
+![Untitled (9)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/3a3f82b1-c4c1-4a88-a80a-4e8c46b94b50)
 
 Chúng ta có thể nhìn tiến trình này hiển thị danh sách kết nối của VNC server từ đoạn tin bên trên. VNC server khởi chạy ở port 5901, đây là port hiển thị. Port 5901 còn được gọi là :1. Tương tự, nếu tạo thêm nhiều VNC server chúng sẽ được hiển thị trên cổng 5902 là ":2", cổng 5903 là ":3", v.v.
 
@@ -267,7 +269,7 @@ Hiển thị danh sách VNC instance, chạy lệnh:
 vncserver --list
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2010.png)
+![Untitled (10)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/0fe32e15-e366-4e0d-8768-3dfdda63199c)
 
 Để bắt đầu, cần kill VNC instance đã tự động chạy khi chúng ta gọi lệnh vncserver, display ở đây là :1 
 
@@ -276,10 +278,9 @@ vncserver -kill :1
 //vncserver -kill :* để kill hết instance đang chạy
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2011.png)
+![Untitled (11)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/f5bacf5f-480c-476f-aa05-46826b370d1a)
 
 > **Lưu ý:** Trong trường hợp này, TigerVNC chưa tạo ra thư mục **~/.vnc/xstartup,** nếu có, thực hiện backup bằng lệnh **mv ~/.vnc/xstartup ~/.vnc/xstartup.bak**, và tạo 1 file mới
-> 
 
 Chưa có package nano, tiến hành cài đặt:
 
@@ -311,7 +312,7 @@ x-window-manager &
 
 Tiến hành save (**Ctrl + O**, then **Enter**) và exit (**Ctrl + X**).
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2012.png)
+![Untitled (12)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/5f7bc0ab-3ff4-44e1-9cff-97dedf5bee6c)
 
 Cuối cùng, chúng ta cần làm cho tệp này có thể thực thi:
 
@@ -325,14 +326,13 @@ Khi hoàn tất, restart VNC server với lệnh sau:
 vncserver -localhost no :1
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2013.png)
+![Untitled (13)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/0881747b-ba62-4b1b-87a3-ac999b36e944)
 
 > **Lưu ý:** Mặc định, TigerVNC chỉ chấp nhận kết nối từ 127.0.0.1 hay localhost vì lý do bảo mật. Tuy nhiên, vì chúng ta chỉ đang demo, thêm tùy chọn "-localhost no" để có thể truy cập vào VNC server từ bên ngoài.
-> 
 
 Chạy lại **vncserver --list** để kiểm tra:
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2014.png)
+![Untitled (14)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/521b2dc2-3d8f-46b0-9d49-6fd5d2d8cb66)
 
 Tại host, chạy lệnh sau để mở SSH Tunnel cho VNC server
 
@@ -346,11 +346,10 @@ Chúng ta cần đổi **server_user_name** và **server_ip_address,** trong tr�
 ssh -L 59000:localhost:5901 -C -N -l duykhanhxx03 172.22.0.2
 ```
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2015.png)
+![Untitled (15)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/a21cef2f-601b-4579-8855-05fc67a8cca4)
 
 > Lưu ý: sau khi chạy lệnh sau, SSH connection sẽ treo sau khi nhập mật khẩu (Tính năng 😃).
-Khi hoàn thành phiên làm việc với VNC client, chúng ta có thể kill câu lệnh trên bằng **Ctrl + C.** Hơn nữa, chúng ta có thể thêm tham số -f, làm cho SSH tunneling chạy ngầm.
-> 
+> Khi hoàn thành phiên làm việc với VNC client, chúng ta có thể kill câu lệnh trên bằng **Ctrl + C.** Hơn nữa, chúng ta có thể thêm tham số -f, làm cho SSH tunneling chạy ngầm.
 
 Giải thích lệnh:
 
@@ -361,10 +360,10 @@ Giải thích lệnh:
 
 Sau khi thiết lập SSH Tunnel xong, khởi chạy VNC Client và connect với địa chỉ **localhost:59000**.
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2016.png)
+![Untitled (16)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/4cdf5ac6-1bc1-4eb0-b0ee-f1d94eeaedb7)
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2017.png)
+![Untitled (17)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/94794419-0564-4178-81bc-17f204fff3cd)
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2018.png)
+![Untitled (18)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/e367113f-ded2-4308-ab38-25c5c1938ebf)
 
-![Untitled](Ba%CC%80i%20ta%CC%A3%CC%82p%20KTPM%20Tua%CC%82%CC%80n%201%203c637b4337b54aa9969f5cc399d358fe/Untitled%2019.png)
+![Untitled (19)](https://github.com/duykhanhxx03/bop-bop/assets/99308937/ad99310f-2d7b-41cf-a839-5c8efbce6f00)
